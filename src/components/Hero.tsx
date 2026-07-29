@@ -5,7 +5,6 @@ import { confettiBurst } from './Confetti';
 
 export function Hero() {
   const [revealed, setRevealed] = useState(false);
-  const heroPhoto = 'https://raw.githubusercontent.com/vishnu119147/final/main/public/photos/us.JPEG';
 
   useEffect(() => {
     const t = setTimeout(() => setRevealed(true), 200);
@@ -63,7 +62,7 @@ export function Hero() {
           <div className="polaroid-tape" />
           <div className="rounded-[2px] bg-white p-3 pb-12 shadow-2xl shadow-roseblush-400/30 transition-transform duration-500 hover:rotate-0">
             <Photo
-              src={heroPhoto}
+              src="/photos/us.JPEG"
               alt="Champu"
               className="aspect-square rounded-[2px]"
             />
